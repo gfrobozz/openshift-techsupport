@@ -1,0 +1,34 @@
+{
+    "name": "techsupport",
+    "version": "1.0",
+    "description": "Basic support-style chat server",
+    "keywords": ["OpenShift", "Node.js", "application", "socket.io"],
+    "homepage": "https://github.com/gfrobozz/techsupport",
+    "author": {
+        "name": "Gil Frobozz",
+        "email": "gfrobozz@yepmail.net",
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/gfrobozz/techsupport.git"
+    },
+    "engines": {
+        "node": ">= 0.6.0",
+        "npm": ">= 1.0.0"
+    },
+
+    "dependencies": {
+        "optimist": "0.3.x",
+        "socket.io": "0.9.x",
+        "express": "3.x"
+    },
+    "devDependencies": {},
+    "bundleDependencies": [],
+
+    "scripts": { 
+        "start": "node server.js --websocket-port=8000 --log-level=1" 
+    },
+
+    "private": true,
+    "main": "server.js"
+}
