@@ -7,7 +7,10 @@ $(document).ready(function() {
     (function (exports) {
         // We use socket.io as our bridge. It will sort out what sort of
         // connection we're going to use.
-        var socket = io.connect(socketURI);
+        // NOTE: changed to :8443 to accommodate some OpenShift websocket https weirdness
+        // (works with Chrome and its auto-https behavior too)
+        //var socket = io.connect(socketURI);
+        var socket = io.connect(":8443/");
         // These are events reserved by socket.io, and we listen in.
         socket.on('connect', function() {
             messages.info('Welcome, please enter your username.');
