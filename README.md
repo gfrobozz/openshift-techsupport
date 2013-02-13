@@ -26,3 +26,11 @@ A PoC support-style chat server / web client. Based on https://github.com/jeremy
     
     # push into production
     $ git push
+
+## Usage
+
+    # Users get support via
+    http://yourapp.rhcloud.com
+
+    # Admin console via
+    http://yourapp.rhcloud.com/admin
