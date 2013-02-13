@@ -1,6 +1,6 @@
 # techsupport
 
-A PoC support-style chat server and web client. Based on https://github.com/jeremyosborne/chatty
+A PoC support-style chat server / web client. Based on https://github.com/jeremyosborne/chatty
 
 ## Requirements
 
