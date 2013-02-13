@@ -1,6 +1,6 @@
 {
     "name": "techsupport",
-    "version": "1.0",
+    "version": "0.0.1",
     "description": "Basic support-style chat server",
     "keywords": ["OpenShift", "Node.js", "application", "socket.io"],
     "homepage": "https://github.com/gfrobozz/openshift-techsupport",
