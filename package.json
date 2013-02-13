@@ -3,14 +3,14 @@
     "version": "1.0",
     "description": "Basic support-style chat server",
     "keywords": ["OpenShift", "Node.js", "application", "socket.io"],
-    "homepage": "https://github.com/gfrobozz/techsupport",
+    "homepage": "https://github.com/gfrobozz/openshift-techsupport",
     "author": {
         "name": "Gil Frobozz",
         "email": "gfrobozz@yepmail.net",
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/gfrobozz/techsupport.git"
+        "url": "https://github.com/gfrobozz/openshift-techsupport.git"
     },
     "engines": {
         "node": ">= 0.6.0",
