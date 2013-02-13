@@ -7,16 +7,22 @@ A PoC support-style chat server / web client. Based on https://github.com/jeremy
 * node.js (assumes 0.6.0 or greater)
 * npm (assumes 1.0.0 or greater)  
 
-## Basic usage
+## OpenShift Deployment
 
-    # all from the command prompt within this directory
-    npm install
-    # start the server piece
-    node server.js
+    # create app
+    $ rhc app create techsupport node
 
-    # client side
-    http://127.0.0.1:8080/
-    # admin side
-    http://127.0.0.1:8080/admin
+    # pull down app
+    $ cd techsupport
+    $ git remote add -f ts-upstream git://github.com/gfrobozz/openshift-techsupport.git
+    $ git merge -Xtheirs ts-upstream/master
 
-    # add admins to common/models.js
+    # edit common/models.js admins list
+    // Admin list
+    var admins = [
+      'futonsurfer',
+      'earl'
+    ]
+    
+    # push into production
+    $ git push
