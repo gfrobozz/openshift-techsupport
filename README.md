@@ -24,6 +24,9 @@ A PoC support-style chat server / web client. Based on https://github.com/jeremy
       'earl'
     ]
     
+    # commit your edits
+    git commit -a -m "changed admins"
+
     # push into production
     $ git push
 
