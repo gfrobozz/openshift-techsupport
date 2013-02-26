@@ -205,7 +205,26 @@ $(document).ready(function() {
         }
     });
     $('#status-update-form button').on('click', function(e) {
-        socket.disconnect();
+        // Same as above, should make this a function
+        // The context of the message is determined by our state.
+        var message = $('#status-update-form input[type="text"]').val();
+        // Send a message to everyone on the return key.
+        if (message && socket.socket.connected) {
+          if (!user.name) {
+              // Attempt to name ourselves first.
+              user.setName(message);
+          }
+          else {
+              // Normal message broadcast.
+              socket.emit('chat', {
+                  'user': user,
+                  'message': message,
+                  'dest': selected_user || user.name
+              });
+          }
+          // Clean out the value for the next input.
+          $('#status-update-form input[type="text"]').val("");
+        }
     });
 });
 
